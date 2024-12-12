@@ -1,0 +1,80 @@
+.atmContainer {
+  border: solid 15px green;
+  /* border-style: double; */
+  border-radius: 15px;
+  height: auto;
+  width: 500px;
+  margin-left: 15em;
+  display: inline-block;
+  background-color: green;
+}
+.mainScreen {
+  /* border: solid red; */
+  display: block;
+  /* margin: 1em; */
+  height: 45%;
+}
+.btnsGroup {
+  /* border: solid blue; */
+  height: auto;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 2em;
+  background-color: green;
+}
+.atmScreen {
+  border: solid 3px yellow;
+  height: 400px;
+  background-color: blue;
+  text-align: center;
+}
+.atmKeypad {
+  /* border: solid greenyellow; */
+  height: auto;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  background-color: grey;
+  justify-items: center;
+}
+.keypad {
+  height: 45px;
+  width: 70px;
+}
+.keypad:hover {
+  border: solid blue;
+  background-color: aliceblue;
+}
+
+.enter {
+  height: 45px;
+  width: 70px;
+}
+.clear {
+  height: 45px;
+  width: 70px;
+}
+
+.enter:hover {
+  background-color: green;
+}
+.clear:hover {
+  background-color: red;
+}
+.btns {
+  height: 40px;
+  width: fit-content;
+}
+.accNo {
+  height: 25px;
+  width: 185px;
+  text-align: center;
+  display: none;
+  justify-self: center;
+}
+.message {
+  color: white;
+}

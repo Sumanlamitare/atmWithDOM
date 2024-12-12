@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="atmContainer">
+      <div class="mainScreen">
+        <div class="atmScreen">
+          <h2 class="label">Welcome to your ATM</h2>
+          
+          <h2 class="message"></h3>
+          <h3 class="instruction"></h3>
+        </div>
+        <div class="btnsGroup">
+          <button
+            class="btns"
+            id="withdraw"
+            onclick="clickedAction('Withdraw')"
+            onkeydown="withdrawAfter()"
+          >
+            Withdraw
+          </button>
+          <button
+            class="btns"
+            id="check"
+            onclick="clickedAction('Check Balance')"
+          >
+            Check Balance
+          </button>
+          <button class="btns" id="exit" onclick="clickedAction('Exit ATM')">
+            Exit ATM
+          </button>
+        </div>
+      </div>
+      <div class="atmKeypad">
+        <button class="keypad" onclick="findMyValue(event)">0</button>
+        <button class="keypad" onclick="findMyValue(event)">1</button>
+        <button class="keypad" onclick="findMyValue(event)">2</button>
+        <button class="keypad" onclick="findMyValue(event)">3</button>
+        <button class="keypad" onclick="findMyValue(event)">4</button>
+        <button class="keypad" onclick="findMyValue(event)">5</button>
+        <button class="keypad" onclick="findMyValue(event)">6</button>
+        <button class="keypad" onclick="findMyValue(event)">7</button>
+        <button class="keypad" onclick="findMyValue(event)">8</button>
+        <button class="keypad" onclick="findMyValue(event)">9</button>
+        <button class="enter" onclick="clickedAction('Enter')">Enter</button>
+        <button class="clear" onclick="clickedAction('Clear')">Clear</button>
+      </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
